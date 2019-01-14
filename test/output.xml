@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190114 20:21:11.199" generator="Robot 3.1 (Python 2.7.15 on win32)">
+<suite source="C:\Users\rohit\PycharmProjects\sikuli_orangehrm\test\login_demo.robot" id="s1" name="Login Demo">
+<test id="s1-t1" name="Login Orange HRM Valid Credentials">
+<kw name="Open Browser To Landing Page" library="keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190114 20:21:53.433" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/index.php/auth/login'.</msg>
+<status status="PASS" endtime="20190114 20:22:11.387" starttime="20190114 20:21:53.433"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190114 20:22:12.844" starttime="20190114 20:22:11.387"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>7</arg>
+</arguments>
+<status status="PASS" endtime="20190114 20:22:12.845" starttime="20190114 20:22:12.844"></status>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<doc>Add image path</doc>
+<arguments>
+<arg>${imagePath}</arg>
+</arguments>
+<msg timestamp="20190114 20:22:12.934" level="INFO">Params: [C:\Users\rohit\PycharmProjects\sikuli_orangehrm\images\]</msg>
+<status status="PASS" endtime="20190114 20:22:12.934" starttime="20190114 20:22:12.845"></status>
+</kw>
+<status status="PASS" endtime="20190114 20:22:12.934" starttime="20190114 20:21:53.432"></status>
+</kw>
+<kw name="Exists" library="SikuliLibrary">
+<doc>Exists</doc>
+<arguments>
+<arg>${imagePath}username.png</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20190114 20:22:13.698" level="INFO">Params: [C:\Users\rohit\PycharmProjects\sikuli_orangehrm\images\username.png, 5]</msg>
+<status status="PASS" endtime="20190114 20:22:13.699" starttime="20190114 20:22:12.935"></status>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<doc>Input text. Image could be empty</doc>
+<arguments>
+<arg>${imagePath}username.png</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20190114 20:22:14.790" level="INFO">Params: [C:\Users\rohit\PycharmProjects\sikuli_orangehrm\images\username.png, Admin]
+Input Text:
+Admin</msg>
+<msg timestamp="20190114 20:22:14.790" html="yes" level="INFO">&lt;img src='sikuli_captured/sikuliximage-1547477533850.png'/&gt;
+[log] CLICK on L(822,479)@S(0)[0,0 1366x768] (556 msec)
+[log]  TYPE "Admin"</msg>
+<status status="PASS" endtime="20190114 20:22:14.791" starttime="20190114 20:22:13.699"></status>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<doc>Input text. Image could be empty</doc>
+<arguments>
+<arg>${imagePath}password.png</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190114 20:22:16.286" level="INFO">Params: [C:\Users\rohit\PycharmProjects\sikuli_orangehrm\images\password.png, admin123]
+Input Text:
+admin123</msg>
+<msg timestamp="20190114 20:22:16.287" html="yes" level="INFO">&lt;img src='sikuli_captured/sikuliximage-1547477535148.png'/&gt;
+[log] CLICK on L(818,531)@S(0)[0,0 1366x768] (520 msec)
+[log]  TYPE "admin123"</msg>
+<status status="PASS" endtime="20190114 20:22:16.287" starttime="20190114 20:22:14.791"></status>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<doc>Click image</doc>
+<arguments>
+<arg>${imagePath}login_btn.png</arg>
+</arguments>
+<msg timestamp="20190114 20:22:17.138" level="INFO">Params: [C:\Users\rohit\PycharmProjects\sikuli_orangehrm\images\login_btn.png]</msg>
+<msg timestamp="20190114 20:22:17.138" html="yes" level="INFO">&lt;img src='sikuli_captured/sikuliximage-1547477536446.png'/&gt;
+[log] CLICK on L(720,588)@S(0)[0,0 1366x768] (521 msec)</msg>
+<status status="PASS" endtime="20190114 20:22:17.139" starttime="20190114 20:22:16.288"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20190114 20:22:22.140" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190114 20:22:22.140" starttime="20190114 20:22:17.139"></status>
+</kw>
+<kw name="Exists" library="SikuliLibrary">
+<doc>Exists</doc>
+<arguments>
+<arg>${imagePath}login_success.png</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20190114 20:22:22.288" level="INFO">Params: [C:\Users\rohit\PycharmProjects\sikuli_orangehrm\images\login_success.png, 5]</msg>
+<status status="PASS" endtime="20190114 20:22:22.288" starttime="20190114 20:22:22.141"></status>
+</kw>
+<kw name="Close Browser for HRM" library="keywords">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190114 20:22:24.588" starttime="20190114 20:22:22.290"></status>
+</kw>
+<status status="PASS" endtime="20190114 20:22:24.589" starttime="20190114 20:22:22.288"></status>
+</kw>
+<status status="PASS" endtime="20190114 20:22:24.589" critical="yes" starttime="20190114 20:21:53.431"></status>
+</test>
+<test id="s1-t2" name="Login Orange HRM Invalid Credentials">
+<kw name="Open Browser To Landing Page" library="keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190114 20:22:24.595" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/index.php/auth/login'.</msg>
+<status status="PASS" endtime="20190114 20:22:35.098" starttime="20190114 20:22:24.594"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190114 20:22:36.486" starttime="20190114 20:22:35.098"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>7</arg>
+</arguments>
+<status status="PASS" endtime="20190114 20:22:36.488" starttime="20190114 20:22:36.487"></status>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<doc>Add image path</doc>
+<arguments>
+<arg>${imagePath}</arg>
+</arguments>
+<msg timestamp="20190114 20:22:36.496" level="INFO">Params: [C:\Users\rohit\PycharmProjects\sikuli_orangehrm\images\]</msg>
+<status status="PASS" endtime="20190114 20:22:36.496" starttime="20190114 20:22:36.489"></status>
+</kw>
+<status status="PASS" endtime="20190114 20:22:36.496" starttime="20190114 20:22:24.594"></status>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<doc>Input text. Image could be empty</doc>
+<arguments>
+<arg>${imagePath}username.png</arg>
+<arg>${username1}</arg>
+</arguments>
+<msg timestamp="20190114 20:22:37.645" level="INFO">Params: [C:\Users\rohit\PycharmProjects\sikuli_orangehrm\images\username.png, SDADAS]
+Input Text:
+SDADAS</msg>
+<msg timestamp="20190114 20:22:37.645" html="yes" level="INFO">&lt;img src='sikuli_captured/sikuliximage-1547477556635.png'/&gt;
+[log] CLICK on L(822,479)@S(0)[0,0 1366x768] (520 msec)
+[log]  TYPE "SDADAS"</msg>
+<status status="PASS" endtime="20190114 20:22:37.646" starttime="20190114 20:22:36.497"></status>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<doc>Input text. Image could be empty</doc>
+<arguments>
+<arg>${imagePath}password.png</arg>
+<arg>${password1}</arg>
+</arguments>
+<msg timestamp="20190114 20:22:39.265" level="INFO">Params: [C:\Users\rohit\PycharmProjects\sikuli_orangehrm\images\password.png, DFDSFSDF]
+Input Text:
+DFDSFSDF</msg>
+<msg timestamp="20190114 20:22:39.265" html="yes" level="INFO">&lt;img src='sikuli_captured/sikuliximage-1547477557965.png'/&gt;
+[log] CLICK on L(818,531)@S(0)[0,0 1366x768] (521 msec)
+[log]  TYPE "DFDSFSDF"</msg>
+<status status="PASS" endtime="20190114 20:22:39.265" starttime="20190114 20:22:37.647"></status>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<doc>Click image</doc>
+<arguments>
+<arg>${imagePath}login_btn.png</arg>
+</arguments>
+<msg timestamp="20190114 20:22:40.038" level="INFO">Params: [C:\Users\rohit\PycharmProjects\sikuli_orangehrm\images\login_btn.png]</msg>
+<msg timestamp="20190114 20:22:40.038" html="yes" level="INFO">&lt;img src='sikuli_captured/sikuliximage-1547477559402.png'/&gt;
+[log] CLICK on L(720,588)@S(0)[0,0 1366x768] (520 msec)</msg>
+<status status="PASS" endtime="20190114 20:22:40.038" starttime="20190114 20:22:39.267"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20190114 20:22:45.039" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190114 20:22:45.039" starttime="20190114 20:22:40.039"></status>
+</kw>
+<kw name="Exists" library="SikuliLibrary">
+<doc>Exists</doc>
+<arguments>
+<arg>${imagePath}invalid.png</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20190114 20:22:45.194" level="INFO">Params: [C:\Users\rohit\PycharmProjects\sikuli_orangehrm\images\invalid.png, 5]</msg>
+<status status="PASS" endtime="20190114 20:22:45.194" starttime="20190114 20:22:45.040"></status>
+</kw>
+<kw name="Close Browser for HRM" library="keywords">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190114 20:22:47.287" starttime="20190114 20:22:45.195"></status>
+</kw>
+<status status="PASS" endtime="20190114 20:22:47.288" starttime="20190114 20:22:45.194"></status>
+</kw>
+<status status="PASS" endtime="20190114 20:22:47.289" critical="yes" starttime="20190114 20:22:24.592"></status>
+</test>
+<status status="PASS" endtime="20190114 20:22:47.292" starttime="20190114 20:21:11.204"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Login Demo" pass="2">Login Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
