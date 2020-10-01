@@ -1,6 +1,6 @@
 *** Settings ***
 Library           SikuliLibrary
-Library           Selenium2Library
+Library           SeleniumLibrary
 
 *** Variables ***
 ${url}            https://opensource-demo.orangehrmlive.com/index.php/auth/login
